@@ -2,7 +2,8 @@ services:
   - type: web
     name: heart-health-risk-predict
     env: python
-    runtime: python-3.11.9
+    runtime: python-3.11
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
+
 
